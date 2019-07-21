@@ -1,0 +1,40 @@
+package com.cwh.springmvc.test;
+
+import com.cwh.springmvc.crud.dao.EmployeeDao;
+import com.cwh.springmvc.crud.entites.Employee;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.Collection;
+import java.util.Date;
+
+/**
+ * @author Cwh
+ * CreateTime 2019/7/20 12:36
+ */
+@Controller
+public class SpringMVCTest {
+
+    @Autowired
+    private EmployeeDao employeeDao;
+
+    @ResponseBody
+    @RequestMapping("/testHttpMessageConverter")
+    public String testHttpMessageConverter(@RequestBody String body){
+        System.out.println(body);
+        return "HelloWorld"+new Date();
+    }
+
+    @ResponseBody
+    @RequestMapping("/testJson")
+    public Collection<Employee> testJson(){
+        return employeeDao.getAll();
+    }
+    @RequestMapping("/testConversionServiceConverter")
+    public String testConverter(@RequestParam("employee") Employee employee){
+        System.out.println("save: "+employee);
+        employeeDao.save(employee);
+        return "redirect:/emps";
+    }
+}
