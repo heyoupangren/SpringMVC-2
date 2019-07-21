@@ -6,9 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c21e8415-ad9b-4a37-9544-49e39cbe5c71" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/i18n_zh_CN.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18n_zh_CN.properties" afterDir="false" />
-    </list>
+    <list default="true" id="c21e8415-ad9b-4a37-9544-49e39cbe5c71" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -332,12 +330,12 @@
       <option name="presentableId" value="Default" />
       <updated>1563586572253</updated>
       <workItem from="1563586576978" duration="29319000" />
-      <workItem from="1563689213344" duration="1045000" />
+      <workItem from="1563689213344" duration="1322000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30364000" />
+    <option name="totallyTimeSpent" value="30641000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
