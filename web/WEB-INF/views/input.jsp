@@ -15,7 +15,7 @@
 </head>
 <body>
 
-
+    <%--将字符串转化为bean对象--%>
     <form action="testConversionServiceConverter" method="post">
         <%--lastname-email-gender-department.id 例如:GG-gg@163.com-0-105 --%>
         Employee: <input type="text" name="employee"><br>

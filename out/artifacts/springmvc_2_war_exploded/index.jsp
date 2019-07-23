@@ -62,5 +62,24 @@
   <br><br>
 
   <a href="/i18n">I18N Page</a>
+  <br><br>
+
+  <!--文件上传功能-->
+  <form action="/testFileUpload" method="post" enctype="multipart/form-data">
+    File: <input type="file" name="file"/>
+    Desc: <input type="text" name="desc"/>
+    <input type="submit" value="Submit">
+  </form>
+  <br><br>
+
+  <a href="/testExceptionHandlerExceptionResolver?i=1">Test ExceptionHandlerExceptionResolver</a>
+  <br><br>
+  <a href="/testResponseStatusExceptionResolver?i=1">Test ResponseStatusExceptionResolver</a>
+  <br><br>
+  <a href="/testDefaultHandlerExceptionResolver">Test DefaultHandlerExceptionResolver</a>
+  <br><br>
+
+  <a href="/testSimpleMappingExceptionResolver?i=2">Test SimpleMappingExceptionResolver</a>
+  <br><br>
   </body>
 </html>
